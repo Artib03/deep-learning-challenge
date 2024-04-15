@@ -25,22 +25,25 @@ Results: Using bulleted lists and images to support your answers, address the fo
 
 # Data Preprocessing
 
-What variable(s) are the target(s) for your model?
+### What variable(s) are the target(s) for your model?
 The target of my model is the column called IS_SUCCESSFUL because that was the best target to determine the the applicant's venture will be successful or not. 
 
-What variable(s) are the features for your model?
+### What variable(s) are the features for your model?
 The features of my model are all the columns of the dummies temporary dataframe except for the target which is the column IS_SUCCESSFUL. 
 
-What variable(s) should be removed from the input data because they are neither targets nor features?
+### What variable(s) should be removed from the input data because they are neither targets nor features?
 The cariables that should be removed from the input data should be AFFILIATION, CLASSIFICATION, USE_CASE, SPECIAL CONSIDERATIONS, ORGANIZATION (any column that is categorical). I believe these columns cannot help predict if the applicant's venture will be successifical and are more of identifiers for each APPLICATION_TYPE. 
 
-### Compiling, Training, and Evaluating the Model
+# Compiling, Training, and Evaluating the Model
 
-How many neurons, layers, and activation functions did you select for your neural network model, and why?
+### How many neurons, layers, and activation functions did you select for your neural network model, and why?
+For the model I optimized I selected 3 layers with 100, 60 and 30 units respectively. I had all layers of the model test 'RELU' because it was the best fit. I previousely tried tanh and sigmoid but both activation functions did not bring me a higher accuracy rate. Also more neurons than the features in the table would create a better hyperparameters. I added an extra layer to improve the model and used RELU for the new layer because we are looking at positive input values. 
 
-Were you able to achieve the target model performance?
+### Were you able to achieve the target model performance?
+No I was not able to achieve 75% on the optimized model and obtained an accuracy score of 70.6%. I attempted three times to optimized the model in various ways. 
 
-What steps did you take in your attempts to increase model performance?
+### What steps did you take in your attempts to increase model performance?
+To increase the model performace, I changed the function types in the layers (RELU TO SIGMOID, RELU TO TANH in the hidden layers), I added more neurons to each layer and I tried to remove some unnessary columns to increase the accruacy of the model. I had reduced the number of epochs to relize later that if I had more epochs it would have been better for the model as more epouchs would iterate through the neurons in each dense layer. I assumed that perhaps the model was overfitting the training data thus having lesser epochs would be better so I changed it from 100 to 50. 
 
 # Summary: 
 ---Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
