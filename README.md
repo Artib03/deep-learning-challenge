@@ -1,21 +1,35 @@
 # deep-learning-challenge
 
-Overview of the analysis: Explain the purpose of this analysis.
+### Overview of the analysis: Explain the purpose of this analysis.
 The purpose of this activity was to predict if applicants will have the best success rate in their ventures if they are funded by Alphabet Soup. Our attempt was to create a deep learning machine using TensorFlow and Keras were used in the model to help predict the outcomes of the ventures. To see if the model would be useful in predicting the outcomes of the ventures this model was used. 
 
 # Results
 Results: Using bulleted lists and images to support your answers, address the following questions:
 
+### Results of the optimized model
+
+![image](https://github.com/Artib03/deep-learning-challenge/assets/147446590/75f91d62-e88d-4cc3-acd4-b906d346310c)
+
+![image](https://github.com/Artib03/deep-learning-challenge/assets/147446590/852149dc-a174-4041-81c0-536d3e062ee6)
+
 ![image](https://github.com/Artib03/deep-learning-challenge/assets/147446590/06040bf6-e97e-4d08-a85e-365029f18b00)
 
+
+### Results of original model 
+
+![image](https://github.com/Artib03/deep-learning-challenge/assets/147446590/8d602c70-172e-46e0-a357-df17267a7cff)
+
+![image](https://github.com/Artib03/deep-learning-challenge/assets/147446590/ddf65bc2-7b88-4093-83ec-8d2f6840c48e)
+
+![image](https://github.com/Artib03/deep-learning-challenge/assets/147446590/c7857e9e-3ec5-4b61-acad-0e3f7bbb70be)
 
 # Data Preprocessing
 
 What variable(s) are the target(s) for your model?
-### The target of my model is the column called IS_SUCCESSFUL because that was the best target to determine the the applicant's venture will be successful or not. 
+The target of my model is the column called IS_SUCCESSFUL because that was the best target to determine the the applicant's venture will be successful or not. 
 
 What variable(s) are the features for your model?
-### The features of my model are all the columns of the dummies temporary dataframe except for the target which is the column IS_SUCCESSFUL. 
+The features of my model are all the columns of the dummies temporary dataframe except for the target which is the column IS_SUCCESSFUL. 
 
 What variable(s) should be removed from the input data because they are neither targets nor features?
 Compiling, Training, and Evaluating the Model
